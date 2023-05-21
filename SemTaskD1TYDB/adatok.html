@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kurzus 1</title>
+    <style>
+        /* CSS stílusok */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(kepek/hatter.jpg);
+            background-size:cover;
+            background-position:top;
+        }
+        
+        header {
+            padding: 40px;
+            text-align: center;
+            color:white;
+        }
+        
+        main {
+            padding-bottom: 50px;
+            padding-top:50px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        
+        footer {
+            color:white;
+            padding: 10px;
+            text-align:center;
+
+        }
+        table, th, td {
+         border: 2px solid black;
+         border-radius: 10px;
+         border-color:blueviolet;
+        }
+        button {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-decoration: underline; color: white;">Farkas Gábor</h1>
+        <a href="https://www.uni-miskolc.hu" target="ujablak"><img src="kepek/header.jpg" height="100px" alt="Fejléc kép">
+        </a>
+    </header>
+    
+    <main>
+        <h2 style="color: white">Farkas Gábor <br><br>
+        Neptunkód: D1TYDB <br><br>
+        Harmadéves villamosmérnök hallgató (G3 BVA)</h2>
+        <h3 style="text-decoration: underline; color: white; font-weight: bolder;">Órarend</h3>
+        <table style="width: 100%;border: 0px;">
+            <tr style="border: 0px;">
+            </tr>
+        <tr>
+            <td style="vertical-align: top; border: 0px;"><table style="text-align: center; align-items: center; width: 100%; color:white;">
+                <tr>
+                    <th style="text-align: left;">Idő</th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">8-10</td>
+                    <td>Web technológiák</td>
+                    <td>Processzortechnika</td>
+                    <td style="background-color:violet;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">10-12</td>
+                    <td>Web technológiák</td>
+                    <td>Scada</td>
+                    <td style="background-color:violet;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">12-14</td>
+                    <td>Terepi műszerezés</td>
+                    <td>Scada</td>
+                    <td>Processzortechnika</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">14-16</td>
+                    <td>Terepi műszerezés</td>
+                    <td>Vezetés szervezés</td>
+                    <td>Termelői rendszerek</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">16-18</td>
+                    <td>Angol</td>
+                    <td style="background-color:violet;"></td>
+                    <td>Angol</td>
+                </tr>
+            </table></td>
+            <td style="border: 0px; padding-left: 10%;">
+                <video  id="videom" width="640" controls>
+                    <source src="kepek/Video.mp4" type="video/mp4"  >
+                    A böngésződ nem támogatja a HTML videók lejátszását. </video>
+                    <br /><br />
+                    <button onClick="videom.play()">indítás</button>
+                <button onClick="videom.pause()">leállítás</button>
+                &nbsp;&nbsp;&nbsp;
+            
+                <br /><br />
+                <button onClick="videom.volume=0">néma</button>
+                <button onClick="videom.volume=0.2">halk</button>
+                <button onClick="videom.volume=1">hangos</button></td>
+        </tr>
+            
+        </table> <br><br>
+    
+        <a href="index.html" style="color:whitesmoke; text-decoration: none; font-weight: bolder ;">Vissza a kezdőlapra</a>
+    </main>
+    
+    <footer>
+        Készítette: <a href="adatok.html" style="color:white; text-decoration:underline; font-weight: bold;">Farkas Gábor D1TYDB </a>
+    </footer>
+</body>
+</html>
