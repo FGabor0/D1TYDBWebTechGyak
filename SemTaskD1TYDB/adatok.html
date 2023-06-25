@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Kurzus 1</title>
+    <title>Adatok</title>
+    <link rel="stylesheet" href="Style.css">
     <style>
-        /* CSS stílusok */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -59,7 +59,7 @@
             <tr style="border: 0px;">
             </tr>
         <tr>
-            <td style="vertical-align: top; border: 0px;"><table style="text-align: center; align-items: center; width: 100%; color:white;">
+            <td style="vertical-align: top; border: 0px;"><table style="text-align:center; align-items: center; width: 100; color:white;">
                 <tr>
                     <th style="text-align: left;">Idő</th>
                     <th>Hétfő</th>
@@ -96,9 +96,23 @@
                     <td style="background-color:violet;"></td>
                     <td>Angol</td>
                 </tr>
-            </table></td>
+            </table><br><br><br>
+            <form>
+                <form action="/action_page.php">
+                <label for="fname">Vezetéknév:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Keresztnév:</label><br>
+                <input type="text" id="lname" name="lname">
+                <br><br>
+                <input type="radio" id="Neme" name="fav_language" value="Férfi">
+                <label for="Férfi">Férfi</label>
+                <input type="radio" id="Neme" name="fav_language" value="Nő">
+                <label for="Nő">Nő</label><br><br>
+                <input type="submit" value="Submit"> 
+              </form>
+        </td>
             <td style="border: 0px; padding-left: 10%;">
-                <video  id="videom" width="640" controls>
+                <video  id="videom" width="550" controls>
                     <source src="kepek/Video.mp4" type="video/mp4"  >
                     A böngésződ nem támogatja a HTML videók lejátszását. </video>
                     <br /><br />
